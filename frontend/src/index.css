@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #2563EB;
+    --color-on-primary: #FFFFFF;
+    --color-primary-container: #DBEAFE;
+    --color-on-primary-container: #1E3A8A;
+    --color-secondary: #10B981;
+    --color-on-secondary: #FFFFFF;
+    --color-secondary-container: #D1FAE5;
+    --color-on-secondary-container: #065F46;
+    --color-tertiary: #8B5CF6;
+    --color-on-tertiary: #FFFFFF;
+    --color-tertiary-container: #EDE9FE;
+    --color-on-tertiary-container: #5B21B6;
+    --color-error: #EF4444;
+    --color-on-error: #FFFFFF;
+    --color-error-container: #FEE2E2;
+    --color-on-error-container: #991B1B;
+    --color-background: #F8FAFC;
+    --color-on-background: #0F172A;
+    --color-surface: #FFFFFF;
+    --color-on-surface: #0F172A;
+    --color-surface-variant: #F1F5F9;
+    --color-on-surface-variant: #475569;
+    --color-outline: #94A3B8;
+    --color-outline-variant: #CBD5E1;
+    --color-border: #E2E8F0;
+  }
+
+  .dark {
+    --color-primary: #3B82F6;
+    --color-on-primary: #FFFFFF;
+    --color-primary-container: #1E3A8A;
+    --color-on-primary-container: #DBEAFE;
+    --color-secondary: #10B981;
+    --color-on-secondary: #000000;
+    --color-secondary-container: #064E3B;
+    --color-on-secondary-container: #A7F3D0;
+    --color-tertiary: #8B5CF6;
+    --color-on-tertiary: #FFFFFF;
+    --color-tertiary-container: #4C1D95;
+    --color-on-tertiary-container: #DDD6FE;
+    --color-error: #F87171;
+    --color-on-error: #000000;
+    --color-error-container: #7F1D1D;
+    --color-on-error-container: #FECACA;
+    --color-background: #0B0F19;
+    --color-on-background: #F1F5F9;
+    --color-surface: #111827;
+    --color-on-surface: #F8FAFC;
+    --color-surface-variant: #1E293B;
+    --color-on-surface-variant: #94A3B8;
+    --color-outline: #64748B;
+    --color-outline-variant: #334155;
+    --color-border: #1E293B;
+  }
+
+  body {
+    @apply bg-background text-on-background font-body-md antialiased;
+  }
+}
+
+@layer utilities {
+  .ambient-shadow {
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  }
+  .dark .ambient-shadow {
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+  }
+}
